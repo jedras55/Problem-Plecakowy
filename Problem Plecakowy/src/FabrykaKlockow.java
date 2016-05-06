@@ -1,7 +1,6 @@
 import java.util.Random;
 
 public class FabrykaKlockow {
-	int iloscKlockow = Main.iloscKlockow;
 
 	private Klocek losujKlocek(double dolnaGranicaKlocka, double gornaGranicaKlocka){
 		Random rand = new Random();
@@ -11,8 +10,8 @@ public class FabrykaKlockow {
 		// Tworzê klocek z wag¹ z podanego zakresu i zwracam go.
 	}
 	public Klocek[] losujWszystkieKlocki(){
-		Klocek klocki[] = new Klocek[iloscKlockow]; // Tworzê pust¹ tablicê klocków.
-		for (int i=0; i<iloscKlockow; i++){
+		Klocek klocki[] = new Klocek[Main.iloscKlockow]; // Tworzê pust¹ tablicê klocków.
+		for (int i=0; i<Main.iloscKlockow; i++){
 				Klocek temp = losujKlocek(Main.dolnaGranicaKlocka, Main.gornaGranicaKlocka); // Losujê klocek i zapisuje jako tymczasowy
 				klocki[i] = temp;
 		}
