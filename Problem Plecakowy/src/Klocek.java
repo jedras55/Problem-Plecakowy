@@ -4,10 +4,15 @@ public class Klocek {
 	
 	public double getWaga() {
 		return waga;
-	} // Tworzê tylko getter, ¿eby mo¿na by³o w trakcie programu pobieraæ wagê klocka,
+	}
+	// Tworzê tylko getter, ¿eby mo¿na by³o w trakcie programu pobieraæ wagê klocka,
 	  // ale zmieniaæ tylko przy tworzeniu obiektu poprzez konstruktor.
-
+	public void setWaga(double waga) {
+		this.waga = waga;
+	}
 	public Klocek(double waga){
 		this.waga = waga;
 	}
+
+	
 }
