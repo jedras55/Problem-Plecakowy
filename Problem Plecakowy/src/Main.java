@@ -40,7 +40,15 @@ public class Main {
 			for(int i=0; i<iloscKlockow; i++){
 				System.out.print(wektorHMCR[i].getWaga() + "  ");
 			}
-			// Nastêpnie PAR
+			int PAR = rand.nextInt(100)+1;
+			int r3 = rand.nextInt(100)+1;
+			if(r3 <= PAR){
+				//dostrojenie wektoru
+				double wagaWektoru = 0;
+				for(int i=0; i<iloscKlockow; i++){
+					wagaWektoru += wektorHMCR[i].getWaga();  // Obliczenie sumy wag wszystkich elementów wektoru
+				}
+			}
 		}
 		else{
 			//tworze wektor ze wzoru
