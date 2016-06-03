@@ -6,7 +6,7 @@ public class Main {
 									// wygeneruje
 	static int dolnaGranicaKlocka = 0; // Najni¿sza mo¿liwa waga klocka
 	static int gornaGranicaKlocka = 3; // Najwy¿sza mo¿liwa waga klocka
-	static int HMS = 3; // HM Size - iloœæ wektorów (wierszy)
+	static int HMS = 10; // HM Size - iloœæ wektorów (wierszy)
 	static double pojemnoscPlecaka = 17.0; // Pojemnoœæ plecaka - ile kg klocków mo¿e pomieœciæ
 	static int iloscIteracji = 1000;
 
@@ -157,7 +157,7 @@ public class Main {
 			else{
 				System.out.println("Nie ma elementow wiekszych niz waga plecaka");
 				if(tablicaSumWag[tablicaSumWag.length-1] > tablicaSumWagMin){
-					if(tablicaSumWag.length-1 > pojemnoscPlecaka){
+					if(tablicaSumWag[tablicaSumWag.length-1] > pojemnoscPlecaka){
 						System.out.println("Wylosowany element jest wiekszy niz najmniejszy, ale te¿ wiêkszy ni¿ waga plecaka i nie zamieniam ich");
 					}
 					else{
